@@ -15,26 +15,26 @@ use no load
                 string[] tmps = null;
                 tmps = ConsultaCNPJReceita.retornodados(txtcnpj.Text, captcha.Text);
 
-                if (tmps.Length > 0)
+                          if (tmps.Length > 0)
                 {
 
-                    txtRazao.Text = tmps[0].ToString().Trim();
-                    txtFantasia.Text = tmps[1].ToString().Trim();
+                    txtRazao.Text = tmps[1].ToString().Trim();
+                    txtFantasia.Text = tmps[2].ToString().Trim();
 
                     //Datas
-                    txtDataSituacaoCadastral.Text = tmps[5].ToString().Trim();
+                    txtDataSituacaoCadastral.Text = tmps[6].ToString().Trim();
                     //Situações
-                    txtSituacaoCadastral.Text = tmps[4].ToString().Trim();
+                    txtSituacaoCadastral.Text = tmps[5].ToString().Trim();
                     //Endereco
-                    txtLogradouro.Text = tmps[6].ToString().Trim();
-                    txtBairro.Text = tmps[8].ToString().Trim();
-                    txtCidade.Text = tmps[9].ToString().Trim();
-                    txtUF.Text = tmps[11].ToString().Trim();
-                    txtCEP.Text = tmps[10].ToString().Trim();
+                    txtLogradouro.Text = tmps[7].ToString().Trim();
+                    txtBairro.Text = tmps[9].ToString().Trim();
+                    txtCidade.Text = tmps[10].ToString().Trim();
+                    txtUF.Text = tmps[12].ToString().Trim();
+                    txtCEP.Text = tmps[11].ToString().Trim();
                     txtComplemento.Text = tmps[12].ToString().Trim();
-                    txtNumero.Text = tmps[7].ToString().Trim();
-                    txtEmail.Text = tmps[13].ToString().Trim();
-                    txtTelefone.Text = tmps[14].ToString().Trim();
+                    txtNumero.Text = tmps[8].ToString().Trim();
+                    txtEmail.Text = tmps[14].ToString().Trim();
+                    txtTelefone.Text = tmps[15].ToString().Trim();
                   
                 }
                 
