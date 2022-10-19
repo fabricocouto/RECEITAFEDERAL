@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net461</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+		<Authors>BUSCA CNPJ</Authors>
+		<Company>BUSCA CNPJ</Company>
+		<Description>BUSCA CNPJ INFORMAÇÕES NO SITE DA RECEITA FEDERAL</Description>
+		<PackageProjectUrl>https://github.com/fabricocouto/embroidery</PackageProjectUrl>
+		<Copyright>BUSCA CNPJ</Copyright>
+		<RepositoryUrl>https://github.com/fabricocouto/BUSCACNPJ</RepositoryUrl>
+		<OutputType>WinExe</OutputType>
+		<Version>3.0.1</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<FileAlignment>1024</FileAlignment>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<FileAlignment>1024</FileAlignment>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Microsoft.VisualBasic" />
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+
+</Project>
